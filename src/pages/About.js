@@ -8,7 +8,7 @@ function About() {
         <div className="media-body">
           <div className="col mt-1 justify-content-center" id="about">
             <img
-              src="./assets/images/sally.jpg"
+              src={process.env.PUBLIC_URL + '/logo192.png'}
               className="profile mr-2 m-4 mx-auto d-block"
               alt="sally"
             />
