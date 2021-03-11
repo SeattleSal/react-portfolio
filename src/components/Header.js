@@ -4,14 +4,12 @@ import Jumbotron from "react-bootstrap/NavBar";
 
 function Header() {
   return (
-<Jumbotron fluid>
-  <Container>
-    <h1>Sally Perez</h1>
-    <p>
-      Full Stack Web Developer
-    </p>
-  </Container>
-</Jumbotron>
+    <Jumbotron>
+      <Container>
+        <h1>Sally Perez</h1>
+        <p>Full Stack Web Developer</p>
+      </Container>
+    </Jumbotron>
   );
 }
 
