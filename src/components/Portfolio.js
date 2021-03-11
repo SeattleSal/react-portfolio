@@ -6,166 +6,87 @@ import feast from "../assets/feast.JPG";
 import trail from "../assets/trail.jpg";
 import weather from "../assets/weather.jpg";
 import yellowBrick from "../assets/yellowBrick.jpg";
+import employee from "../assets/employee.JPG";
 
 function Portfolio() {
+  const projects = [
+    {
+      name: "Feast with Friends",
+      description:
+        "Find restaurants that meet your dietary needs. (Team Project)",
+      technologies: "JavaScript, Express, Handlebars, Bootstrap",
+      gitHubLink: "https://github.com/laurenb08/feastWithFriends/",
+      liveLink: "https://feastwithfriendsproject.herokuapp.com/",
+      imgURL: feast,
+    },
+    {
+      name: "Trail Chasers",
+      description:
+        "Find hikes based on location, length and difficulty. (Team Project)",
+      technologies: "JavaScript, Bluma",
+      gitHubLink: "https://github.com/TaaniBravo/Trail-Chaser-Hiking-App",
+      liveLink: "https://taanibravo.github.io/Trail-Chaser-Hiking-App/",
+      imgURL: trail,
+    },
+    {
+      name: "Employee Directory",
+      description:
+        "React App showing random employees with ability to sort and search.",
+      technologies: "JavaScript/React/Bootstrap",
+      gitHubLink: "https://github.com/SeattleSal/employee-directory-react",
+      liveLink: "https://seattlesal-employee-directory.herokuapp.com/",
+      imgURL: employee,
+    },
+    {
+      name: "Burgers App",
+      description: "React App to add and track burgers you want to eat.",
+      technologies: "JavaScript/Express/Handlebars/Bootstrap",
+      gitHubLink: "https://github.com/SeattleSal/burger",
+      liveLink: "https://seattlesal-burgers.herokuapp.com/",
+      imgURL: burger,
+    },
+    {
+      name: "Weather Dashboard",
+      description: "Look up weather for location and see 5 days of weather.",
+      technologies: "JavaScript/CSS",
+      gitHubLink: "https://github.com/SeattleSal/weather_dashboard",
+      liveLink: "https://seattlesal.github.io/weather_dashboard//",
+      imgURL: weather,
+    },
+    {
+      name: "Wizard of Oz Quiz",
+      description: "Quiz with Wizard of Oz questions.",
+      technologies: "JavaScript/CSS",
+      gitHubLink: "https://github.com/SeattleSal/code-quiz",
+      liveLink: "https://seattlesal.github.io/code-quiz/",
+      imgURL: yellowBrick,
+    },
+  ];
+
   return (
     <Container>
       <section className="container-fluid">
-        <div className="card col-md-6 mt-1">
-          <div className="card-body rounded">
-            <img
-              src={feast}
-              className="card-img-top rounded"
-              alt="meal"
-            />
-            <h3 className="card-text">Feast with Friends</h3>
-            <p className="card-text">
-              JavaScript/Express/Handlebars/Bootstrap <br />
-              (Team Project)
-            </p>
-            <a
-              href="https://github.com/laurenb08/feastWithFriends/"
-              className="btn btn-primary"
-            >
-              GitHub
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://feastwithfriendsproject.herokuapp.com/"
-              className="btn btn-primary"
-            >
-              Live
-            </a>
+        {projects.map((project) => (
+          <div className="card col-md-6 mt-1">
+            <div className="card-body rounded">
+              <h3>{project.name}</h3>
+              <img
+                src={project.imgURL}
+                className="card-img-top rounded"
+                alt="meal"
+              />
+              <p className="card-text">{project.description} </p>
+              <p className="card-text">{project.technologies} </p>
+              <a href={project.gitHubLink} className="btn btn-primary">
+                GitHub
+                <i className="fab fa-github"></i>
+              </a>
+              <a href={project.liveLink} className="btn btn-primary">
+                Live
+              </a>
+            </div>
           </div>
-        </div>
-
-        <div className="card col-md-6 mt-1">
-          <div className="card-body rounded">
-            <img
-              src={trail}
-              className="card-img-top rounded"
-              alt="..."
-            />
-            <h3 className="card-text">Trail Chasers</h3>
-            <p className="card-text">
-              JavaScript/Bulma <br />
-              (Team Project)
-            </p>
-            <a
-              href="https://github.com/TaaniBravo/Trail-Chaser-Hiking-App"
-              className="btn btn-primary"
-            >
-              GitHub
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://taanibravo.github.io/Trail-Chaser-Hiking-App/"
-              className="btn btn-primary"
-            >
-              Live
-            </a>
-          </div>
-        </div>
-
-        <div className="card col-md-6 mt-1">
-          <div className="card-body rounded">
-            <img
-              src="https://placekitten.com/300/200"
-              className="card-img-top rounded"
-              alt="..."
-            />
-            <h3 className="card-text">Employee Directory</h3>
-            <p className="card-text">JavaScript/React/Bootstrap</p>
-            <a
-              href="https://github.com/SeattleSal/employee-directory-react"
-              className="btn btn-primary"
-            >
-              GitHub
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://seattlesal-employee-directory.herokuapp.com/"
-              className="btn btn-primary"
-            >
-              Live
-            </a>
-          </div>
-        </div>
-
-        <div className="card col-md-6 mt-1">
-          <div className="card-body rounded">
-            <img
-              src={burger}
-              className="card-img-top rounded"
-              alt="..."
-            />
-            <h3 className="card-text">Burgers App</h3>
-            <p className="card-text">JavaScript/Express/Handlebars/Bootstrap</p>
-            <a
-              href="https://github.com/SeattleSal/burger"
-              className="btn btn-primary"
-            >
-              GitHub
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://seattlesal-burgers.herokuapp.com/"
-              className="btn btn-primary"
-            >
-              Live
-            </a>
-          </div>
-        </div>
-
-        <div className="card col-md-6 mt-1">
-          <div className="card-body rounded">
-            <img
-              src={weather}
-              className="card-img-top rounded"
-              alt="weather"
-            />
-            <h3 className="card-text">Weather Dashboard</h3>
-            <p className="card-text">JavaScript/CSS</p>
-            <a
-              href="https://github.com/SeattleSal/weather_dashboard"
-              className="btn btn-primary"
-            >
-              GitHub
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://seattlesal.github.io/weather_dashboard/"
-              className="btn btn-primary"
-            >
-              Live
-            </a>
-          </div>
-        </div>
-
-        <div className="card col-md-6 mt-1">
-          <div className="card-body rounded">
-            <img
-              src={yellowBrick}
-              className="card-img-top rounded"
-              alt="yello brick road"
-            />
-            <h3 className="card-text">Wizard of Oz Quiz</h3>
-            <p className="card-text">JavaScript/CSS</p>
-            <a
-              href="https://github.com/SeattleSal/code-quiz"
-              className="btn btn-primary"
-            >
-              GitHub
-              <i className="fab fa-github"></i>
-            </a>
-            <a
-              href="https://seattlesal.github.io/code-quiz/"
-              className="btn btn-primary"
-            >
-              Live
-            </a>
-          </div>
-        </div>
+        ))}
       </section>
     </Container>
   );
