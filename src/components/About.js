@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import profilePic from "../assets/sally.jpg";
+
 
 function About() {
     return (
@@ -8,7 +10,7 @@ function About() {
         <div className="media-body">
           <div className="col mt-1 justify-content-center" id="about">
             <img
-              src={process.env.PUBLIC_URL + '/logo192.png'}
+              src={profilePic}
               className="profile mr-2 m-4 mx-auto d-block"
               alt="sally"
             />

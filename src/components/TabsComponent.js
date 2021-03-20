@@ -9,7 +9,7 @@ import Contact from "./Contact";
 function TabsComponent() {
   return (
     <TabContainer fluid="md">
-      <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example">
+      <Tabs defaultActiveKey="about" id="uncontrolled-tab-example">
         <Tab eventKey="about" title="About">
           <About />
         </Tab>

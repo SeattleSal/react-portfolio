@@ -15,8 +15,8 @@ function Portfolio() {
       description:
         "Find restaurants that meet your dietary needs. (Team Project)",
       technologies: "JavaScript, Express, Handlebars, Bootstrap",
-      gitHubLink: "https://github.com/laurenb08/feastWithFriends/",
-      liveLink: "https://feastwithfriendsproject.herokuapp.com/",
+      gitHubLink: "https://github.com/SeattleSal/feast-with-friends",
+      liveLink: "https://feast-with-friends-plus.herokuapp.com/",
       imgURL: feast,
     },
     {
@@ -76,10 +76,9 @@ function Portfolio() {
                 alt="meal"
               />
               <p className="card-text">{project.description} </p>
-              <p className="card-text">{project.technologies} </p>
+              <p className="card-text">Technologies: {project.technologies} </p>
               <a href={project.gitHubLink} className="btn btn-primary">
-                GitHub
-                <i className="fab fa-github"></i>
+              <i className="fab fa-github"></i>  GitHub  
               </a>
               <a href={project.liveLink} className="btn btn-primary">
                 Live

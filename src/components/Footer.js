@@ -3,9 +3,9 @@ import Jumbotron from "react-bootstrap/NavBar";
 
 function Footer() {
   return (
-    <Jumbotron fluid>
+    <Jumbotron>
       <Container>
-        <p>2021</p>
+        <h5 className="text-center">Sally Perez - 2021</h5>
       </Container>
     </Jumbotron>
   );
