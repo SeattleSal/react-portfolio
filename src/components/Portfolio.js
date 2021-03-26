@@ -1,5 +1,3 @@
-import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
 import burger from "../assets/burger.jpg";
 import feast from "../assets/feast.JPG";
@@ -7,6 +5,8 @@ import trail from "../assets/trail.jpg";
 import weather from "../assets/weather.jpg";
 import yellowBrick from "../assets/yellowBrick.jpg";
 import employee from "../assets/employee.JPG";
+import "../style.css";
+
 
 function Portfolio() {
   const projects = [
@@ -64,11 +64,10 @@ function Portfolio() {
   ];
 
   return (
-    <Container>
-      <section className="container-fluid">
+    <Container style={{display: "flex", flexWrap: "wrap"}}>
         {projects.map((project) => (
-          <div className="card col-md-6 mt-1">
-            <div className="card-body rounded">
+          <div className="card col-md-5" style={{ margin: "1rem"}}>
+            <div className="card-body rounded" >
               <h3>{project.name}</h3>
               <img
                 src={project.imgURL}
@@ -78,7 +77,7 @@ function Portfolio() {
               <p className="card-text">{project.description} </p>
               <p className="card-text">Technologies: {project.technologies} </p>
               <a href={project.gitHubLink} className="btn btn-primary">
-              <i className="fab fa-github"></i>  GitHub  
+              GitHub  
               </a>
               <a href={project.liveLink} className="btn btn-primary">
                 Live
@@ -86,7 +85,6 @@ function Portfolio() {
             </div>
           </div>
         ))}
-      </section>
     </Container>
   );
 }
