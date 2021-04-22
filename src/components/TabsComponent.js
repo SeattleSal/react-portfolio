@@ -2,9 +2,9 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import TabContainer from "react-bootstrap/TabContainer";
 
-import About from "./About";
+import About from "../pages/About";
 import Portfolio from "./Portfolio";
-import Contact from "./Contact";
+import Contact from "../pages/Contact";
 
 function TabsComponent() {
   return (

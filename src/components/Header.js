@@ -1,15 +1,30 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Jumbotron from "react-bootstrap/NavBar";
+// import Container from "react-bootstrap/Container";
+import Navbar from "react-bootstrap/NavBar";
+import MenuBars from "./MenuBars";
+import profilePic from "../assets/sally.jpg";
 
 function Header() {
+  // const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
+
   return (
-    <Jumbotron>
-      <Container>
-        <h1>Sally Perez</h1>
-        <p>Full Stack Web Developer</p>
-      </Container>
-    </Jumbotron>
+    <Navbar className="color-nav" variant="dark">
+      <Navbar.Brand href="#home">
+        <img
+          alt=""
+          src={profilePic}
+          width="30"
+          height="30"
+          className="d-inline-block align-top"
+        />{" "}
+        Sally Perez | Full Stack Developer
+
+      <MenuBars />
+
+      </Navbar.Brand>
+
+
+    </Navbar>
   );
 }
 

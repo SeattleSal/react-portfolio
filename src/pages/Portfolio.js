@@ -50,7 +50,7 @@ function Portfolio() {
       description: "Look up weather for location and see 5 days of weather.",
       technologies: "JavaScript/CSS",
       gitHubLink: "https://github.com/SeattleSal/weather_dashboard",
-      liveLink: "https://seattlesal.github.io/weather_dashboard//",
+      liveLink: "https://seattlesal.github.io/weather_dashboard/",
       imgURL: weather,
     },
     {
