@@ -7,7 +7,6 @@ import yellowBrick from "../assets/yellowBrick.jpg";
 import employee from "../assets/employee.JPG";
 import "../style.css";
 
-
 function Portfolio() {
   const projects = [
     {
@@ -64,27 +63,27 @@ function Portfolio() {
   ];
 
   return (
-    <Container style={{display: "flex", flexWrap: "wrap"}}>
-        {projects.map((project) => (
-          <div className="card col-md-5" style={{ margin: "1rem"}}>
-            <div className="card-body rounded" >
-              <h3>{project.name}</h3>
-              <img
-                src={project.imgURL}
-                className="card-img-top rounded"
-                alt="meal"
-              />
-              <p className="card-text">{project.description} </p>
-              <p className="card-text">Technologies: {project.technologies} </p>
-              <a href={project.gitHubLink} className="btn btn-primary">
-              GitHub  
-              </a>
-              <a href={project.liveLink} className="btn btn-primary">
-                Live
-              </a>
-            </div>
+    <Container style={{ display: "flex", flexWrap: "wrap" }}>
+      {projects.map((project, index) => (
+        <div className="card col-md-5" key={index} style={{ margin: "1rem" }}>
+          <div className="card-body rounded">
+            <h3>{project.name}</h3>
+            <img
+              src={project.imgURL}
+              className="card-img-top rounded"
+              alt="meal"
+            />
+            <p className="card-text">{project.description} </p>
+            <p className="card-text">Technologies: {project.technologies} </p>
+            <a href={project.gitHubLink} className="btn btn-primary">
+              GitHub
+            </a>
+            <a href={project.liveLink} className="btn btn-primary">
+              Live
+            </a>
           </div>
-        ))}
+        </div>
+      ))}
     </Container>
   );
 }

@@ -8,7 +8,7 @@ function Header() {
   // const handleSelect = (eventKey) => alert(`selected ${eventKey}`);
 
   return (
-    <Navbar className="color-nav" variant="dark">
+    <Navbar className="color-nav">
       <Navbar.Brand href="#home">
         <img
           alt=""
@@ -18,12 +18,8 @@ function Header() {
           className="d-inline-block align-top"
         />{" "}
         Sally Perez | Full Stack Developer
-
-      <MenuBars />
-
+        <MenuBars />
       </Navbar.Brand>
-
-
     </Navbar>
   );
 }

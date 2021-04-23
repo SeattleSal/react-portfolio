@@ -32,11 +32,12 @@ body {
 }
 
 .footer {
-  /* flex-shrink: 0; */
+  flex-shrink: 0;
   text-align: center;
-  background-color: tomato;
-  color: wheat;
+  /* background-color: tomato; */
+  /* color: wheat; */
   padding: 1rem;
+  border-style: ridge;
 }
 
 /* Header attributes for top header banner with name and nav links
