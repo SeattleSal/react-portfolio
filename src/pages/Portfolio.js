@@ -5,10 +5,22 @@ import trail from "../assets/trail.jpg";
 import weather from "../assets/weather.jpg";
 import yellowBrick from "../assets/yellowBrick.jpg";
 import employee from "../assets/employee.JPG";
+import cuposugar from "../assets/cuposugar.JPG";
+import booksearch from "../assets/booksearch.JPG";
 import "../style.css";
 
 function Portfolio() {
   const projects = [
+    {
+      name: "Neighborhood Cup O Sugar",
+      description:
+        "Hyperlocal neighborhood experience that allows users to promote a friendly environment and share free items within their community. (Team Project)",
+      technologies:
+        "JavaScript, Node, Express, Axios, bcrypt, passport, mongoose, multer, react, bootstrap, react-bootstrap, Cloudinary 3P API",
+      gitHubLink: "https://github.com/bfourGitHub/cup-o-sugar",
+      liveLink: "https://neighborhood-cup-o-sugar.herokuapp.com/",
+      imgURL: cuposugar,
+    },
     {
       name: "Feast with Friends",
       description:
@@ -28,37 +40,30 @@ function Portfolio() {
       imgURL: trail,
     },
     {
+      name: "My Google Books",
+      description: "Search for books by title and save your favorites.",
+      technologies:
+        "Javascript, React, Mongoose, Bootstrap, Google Books 3P API",
+      gitHubLink: "https://github.com/SeattleSal/google-books-react",
+      liveLink: "https://seattlesal-google-books.herokuapp.com/",
+      imgURL: booksearch,
+    },
+    {
       name: "Employee Directory",
       description:
         "React App showing random employees with ability to sort and search.",
-      technologies: "JavaScript/React/Bootstrap",
+      technologies: "JavaScript, React, Bootstrap",
       gitHubLink: "https://github.com/SeattleSal/employee-directory-react",
       liveLink: "https://seattlesal-employee-directory.herokuapp.com/",
       imgURL: employee,
     },
     {
-      name: "Burgers App",
-      description: "React App to add and track burgers you want to eat.",
-      technologies: "JavaScript/Express/Handlebars/Bootstrap",
-      gitHubLink: "https://github.com/SeattleSal/burger",
-      liveLink: "https://seattlesal-burgers.herokuapp.com/",
-      imgURL: burger,
-    },
-    {
       name: "Weather Dashboard",
       description: "Look up weather for location and see 5 days of weather.",
-      technologies: "JavaScript/CSS",
+      technologies: "JavaScript,CSS",
       gitHubLink: "https://github.com/SeattleSal/weather_dashboard",
       liveLink: "https://seattlesal.github.io/weather_dashboard/",
       imgURL: weather,
-    },
-    {
-      name: "Wizard of Oz Quiz",
-      description: "Quiz with Wizard of Oz questions.",
-      technologies: "JavaScript/CSS",
-      gitHubLink: "https://github.com/SeattleSal/code-quiz",
-      liveLink: "https://seattlesal.github.io/code-quiz/",
-      imgURL: yellowBrick,
     },
   ];
 
