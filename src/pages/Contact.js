@@ -40,6 +40,7 @@ function Contact() {
         </a>
         <a href="./assets/srp_resume.pdf">
           <i className="fa fa-file fa-5x"></i>
+          <p>Download Resume</p>
         </a>
       </Row>
     </Container>
