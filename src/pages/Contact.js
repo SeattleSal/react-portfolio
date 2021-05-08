@@ -5,44 +5,37 @@ import { Row, Col } from "react-bootstrap";
 function Contact() {
   return (
     <Container fluid style={{ marginTop: "1rem" }}>
-      {/* <Card>
-        <Card.Body
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-          }}
-        > */}
-      <Row
-        style={{ margin: "1rem" }}
-        xs={2}
-        md={4}
-        lg={6}
-        className="justify-content-md-center"
-      >
-        <a href="mailto:seattlesally1@gmail.com">
-          <i className="fas fa-envelope-square fa-5x"></i>
-          <p>seattlesally1@gmail.com</p>
-        </a>
-        <a href="https://github.com/SeattleSal/">
-          <i className="fab fa-github-square fa-5x"></i>
-        </a>
-      </Row>
-      <Row
-        style={{ margin: "1rem" }}
-        xs={2}
-        md={4}
-        lg={6}
-        className="justify-content-md-center"
-      >
-        <a href="https://www.linkedin.com/in/sallyrperez/">
-          <i className="fab fa-linkedin-in fa-5x"></i>
-        </a>
-        <a href="./assets/srp_resume.pdf">
-          <i className="fa fa-file fa-5x"></i>
-          <p>Download Resume</p>
-        </a>
-      </Row>
+      <Col className="ml-10">
+        <Row style={{ margin: "1rem" }} >
+          <a href="mailto:seattlesally1@gmail.com">
+            <h4>
+              <i className="fas fa-envelope-square fa-3x mr-4"></i>
+              seattlesally1@gmail.com
+            </h4>
+          </a>
+        </Row>
+        <Row style={{ margin: "1rem" }} >
+          <a href="https://github.com/SeattleSal/">
+            <h4>
+              <i className="fab fa-github-square fa-3x mr-4"></i>/SeattleSal
+            </h4>
+          </a>
+        </Row>
+        <Row style={{ margin: "1rem" }} >
+          <a href="https://www.linkedin.com/in/sallyrperez/">
+            <h4>
+              <i className="fab fa-linkedin-in fa-3x mr-4"></i>/sallyrperez/
+            </h4>
+          </a>
+        </Row>
+        <Row style={{ margin: "1rem" }} >
+          <a href="./assets/srp_resume.pdf">
+            <h4>
+              <i className="fa fa-file fa-3x mr-4"></i>Download Resume
+            </h4>
+          </a>
+        </Row>
+      </Col>
     </Container>
   );
 }

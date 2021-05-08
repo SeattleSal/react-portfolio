@@ -1,3 +1,12 @@
+/* color scheme for page */
+:root {
+  --darkBlue: #150e56;
+  --lightBlue: #8ac4d0;
+  --darkYellow: #f4d160;
+  --lightColor: #fbeeac;
+  --black: #1c1d21;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +19,23 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.color-nav {
+  background-color: var(--darkBlue);
+  color: var(--lightColor);
+  padding: 1rem;
+}
+
+.footer {
+  flex-shrink: 0;
+  text-align: center;
+  /* background-color: tomato; */
+  /* color: wheat; */
+  padding: 1rem;
+  border-style: ridge;
+}
+
+a {
+  color:var(--darkBlue);
 }
