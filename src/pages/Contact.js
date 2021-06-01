@@ -1,6 +1,8 @@
 // import Card from "react-bootstrap/Card";
 import Container from "react-bootstrap/Container";
 import { Row, Col } from "react-bootstrap";
+import resume from "../assets/srp_resume.pdf";
+
 
 function Contact() {
   return (
@@ -29,7 +31,7 @@ function Contact() {
           </a>
         </Row>
         <Row style={{ margin: "1rem" }} >
-          <a href="./assets/srp_resume.pdf">
+          <a href={resume} download>
             <h4>
               <i className="fa fa-file fa-3x mr-4"></i>Download Resume
             </h4>
