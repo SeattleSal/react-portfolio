@@ -24,7 +24,9 @@ function About() {
 
       <Card className="container">
         <Card.Header className="d-flex justify-content-center" >
-          Skills
+          <div>
+          &lt; Skills  /&gt;
+          </div>
         </Card.Header>
         <Card.Body className="d-flex justify-content-center">
         <i className="fab fa-js-square fa-7x m-3" style={{color: "yellow", backgroundColor: "black"}}></i>
