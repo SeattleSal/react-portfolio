@@ -28,7 +28,7 @@ function About() {
           &lt; Skills  /&gt;
           </div>
         </Card.Header>
-        <Card.Body className="d-flex justify-content-center">
+        <Card.Body className="d-flex justify-content-center row">
         <i className="fab fa-js-square fa-7x m-3" style={{color: "yellow", backgroundColor: "black"}}></i>
         <i className="fab fa-react fa-7x m-3" style={{color: "#61DBFB", backgroundColor: "black"}}></i>
         <i className="fab fa-html5 fa-7x m-3" style={{color: "#e34c26"}}></i>

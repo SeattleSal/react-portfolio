@@ -16,7 +16,7 @@ This page is an online portofolio made with React to show off coding projects cr
 
 ## Links
 
-- Live Portfolio Website: https://seattlesal-portfolio.herokuapp.com/
+- Live Portfolio Website: https://seattlesal.dev
 - Github Link: https://github.com/SeattleSal/seattlesal-portfolio
 
 ## Screenshots
