@@ -17,7 +17,7 @@ function Header() {
           height="30"
           className="d-inline-block align-top"
         />{" "}
-        Sally Perez | Full Stack Developer
+        Sally Perez
         <MenuBars />
       </Navbar.Brand>
     </Navbar>

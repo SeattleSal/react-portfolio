@@ -14,18 +14,10 @@ function App() {
         <NavMenu />
         <Container>
           <Switch>
-            <Route exact path="/">
-              <About />
-            </Route>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/portfolio">
-              <Portfolio />
-            </Route>
-            <Route exact path="/contact">
-              <Contact />
-            </Route>
+            <Route exact path="/about" component={About} />
+            <Route exact path="/portfolio" component={Portfolio} />
+            <Route exact path="/contact" component={Contact} />
+            <Route exact path="*" component={About} /> 
           </Switch>
         </Container>
       </BrowserRouter>
